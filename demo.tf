@@ -50,7 +50,7 @@ resource "aws_instance" "adil_aws" {
   sudo systemctl enable tomcat
   sudo systemctl start tomcat
   cd /usr/share/tomcat/webapps/
-  sudo cp /tmp/spring-mvc-example.war /usr/share/tomcat/webapps/spring-mvc-example.war
+  sudo cp /tmp/springboot-hellowolrd-0.0.1-SNAPSHOT.war /usr/share/tomcat/webapps/springboot-hellowolrd-0.0.1-SNAPSHOT.war
   EOF
 
   provisioner "file" {
